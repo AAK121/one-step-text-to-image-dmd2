@@ -1,0 +1,9 @@
+# training / data preparation (in addition to torch, torchvision, requirements.txt)
+pyarrow>=14
+pandas>=2.0
+# evaluation metrics (pretrained Inception / CLIP used only as metrics)
+torchmetrics[image]>=1.3
+torch-fidelity>=0.3
+transformers>=4.40
+# optional: LPIPS regression loss (as in the DMD paper) -> train_dmd.py --reg-loss lpips
+# lpips>=0.1.4

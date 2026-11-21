@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+.python-version
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Archives and large binaries
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.exe
+
+# Data and caches (dataset is not redistributed)
+/data/
+*.npy
+*.npz
+*.parquet
+
+# Training outputs: keep only the released checkpoint
+runs/
+outputs/
+wandb/
+*.log
+*.pt
+*.pth
+*.ckpt
+!checkpoints/generator.pt
